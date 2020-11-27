@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context = "http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--<context:property-placeholder location="classpath:jdbc.properties" />
+    &lt;!&ndash;添加注解扫描组件&ndash;&gt;
+    <context:component-scan base-package="szw" />-->
+
+    <!--<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql://localhost:3306/db_rubbish"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="root"></property>
+    </bean>
+    使用properties
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="${jdbc.driver}"></property>
+        <property name="url" value="${jdbc.url}"></property>
+        <property name="username" value="${jdbc.username}"></property>
+        <property name="password" value="${jdbc.password}"></property>
+    </bean>
+    &lt;!&ndash;配置dao,service,依赖注入,scope设置单例或多例模式，&ndash;&gt;
+    <bean id="userDao" class="szw.dao.daoImpl.UserDaoImpl" scope="singleton"></bean>
+    &lt;!&ndash;向service注入dao,若为对象则用ref，否则用value&ndash;&gt;
+    <bean id="userService" class="szw.service.serviceImpl.UserServiceImpl">
+        <property name="userDao" ref="userDao"></property>
+    </bean>-->
+    <!--改用注解形式,分原始注解与新注解-->
+
+</beans>
